@@ -143,7 +143,7 @@ mod tests {
         let first_session = schedule.get_current_session().unwrap();
         assert_eq!(first_session.subject, "Rs");
 
-        shedule.start_session("py", 30).unwrap();
+        schedule.start_session("py", 30).unwrap();
         let second_session = schedule.get_current_session().unwrap();
         assert_eq!(second_session.subject, "py");
 

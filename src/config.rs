@@ -164,7 +164,7 @@ mod tests{
 
         config.add_subject("QA", 10.0).unwrap();
 
-        let reslut = config.add_schedule("QA", "Monday", "09:00", 60);
+        let result = config.add_schedule("QA", "Monday", "09:00", 60);
         assert!(result.is_ok());
 
         let qa_schedules = config.schedules.get("QA").unwrap();
@@ -195,7 +195,7 @@ mod tests{
         let mut config = create_test_config();
 
         config.add_subject("DB", 10.0).unwrap();
-        config.add_schedule("DB", "Monday", "09:00").unwrap();
+        config.add_schedule("DB", "Monday", "09:00", 50).unwrap();
 
         let save_result = config.save();
         assert!(save_result.is_ok());

@@ -2,6 +2,7 @@
 name = "study_timer"
 version = "0.1.0"
 edition = "2024"
+author = "ziggybaz"
 
 [dependencies]
 chrono = "0.4"
@@ -12,3 +13,7 @@ notify-rust = "4.9"
 tokio = { version = "1", features = ["full"] }
 colored = "2.0"
 directories = "5.0"
+
+[dev-dependencies]
+tempfile = "3.5"
+mockall = "0.11"
